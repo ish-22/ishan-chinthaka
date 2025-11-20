@@ -108,7 +108,7 @@ body{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius:var(--radius);
   padding:1.2rem;
-  /* display:flex; */
+  display:flex;
   gap:1rem;
   align-items:center;
   border:1px solid var(--glass-border);
