@@ -1,251 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <title>
-    Ishan Chinthaka 
-  </title>
-
-  <meta name="description" content="A highly motivated software developer skilled in web and mobile app development.">
-  <meta name="keywords" content="Ishan Chinthaka, Software Developer, Java, Python, JavaScript, Web Development, Mobile Apps" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ishan Chinthaka — Software Developer</title>
+  <meta name="description" content="Ishan Chinthaka — Software Developer. Web & mobile apps, PHP, Java, React, UI/UX.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
-
 <body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Ishan<span class="accent">.</span></a>
 
-  <!-- ***** Header ***** -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
 
-<header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Certifications</a></li>
-          <li class="nav__item"><a href="#skills" class = "nav__link">Skills</a></li>
-          <li class="nav__item"> <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certs">Certifications</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>  
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="mailto:ishanchinthaka2002@gmail.com">Email</a>
+        <a class="btn" href="https://ish-22.github.io/ishanchinthaka2002/" target="_blank" rel="noopener">Portfolio</a>
+      </div>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Ishan Chinthaka</span>
-        </h1>
-        <p>A Software Developer based in Ambalangoda, Sri Lanka.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+
+    <div class="hero container">
+      <div class="hero-left">
+        <h1 class="hero-title">Hi — I'm <strong>Ishan Chinthaka</strong></h1>
+        <p class="hero-sub">Software developer focused on web & mobile apps, UI/UX and backend systems. Currently pursuing Higher Diploma in Computing & Software Engineering.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary large" href="#contact">Let's talk</a>
+          <a class="btn ghost" href="./images/Ishan Chinthaka_cv.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+
+        <div class="social-row">
+          <a class="social" href="https://www.linkedin.com/in/ishan-chinthaka-1a6b5a2b1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <!-- LinkedIn SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.6 4.12 5.5 3 5.5S1 4.6 1 3.5 1.86 1.5 3 1.5s1.98.9 1.98 2zM.5 8.98h5V24h-5V8.98zM9.5 8.98h4.78v2.05h.07c.66-1.25 2.28-2.57 4.7-2.57 5.02 0 5.95 3.3 5.95 7.58V24h-5v-7.7c0-1.84-.03-4.21-2.57-4.21-2.58 0-2.98 2.02-2.98 4.07V24h-5V8.98z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a class="social" href="https://github.com/ish-22" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.6 2.9 8.5 6.9 9.9.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.7 2 1.1.1-.8.4-1.3.7-1.6-2.2-.3-4.5-1.1-4.5-5 0-1.1.4-2 1.1-2.8-.1-.3-.5-1.3.1-2.6 0 0 .9-.3 3 .1.8-.2 1.7-.3 2.6-.3s1.8.1 2.6.3c2.1-.4 3-.1 3-.1.6 1.3.3 2.3.1 2.6.7.8 1.1 1.8 1.1 2.8 0 3.9-2.4 4.7-4.6 5 .4.4.8 1 1 2v3c0 .3.2.6.7.5 4-1.4 6.9-5.3 6.9-9.9C23.1 5.3 18.3.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <a class="social" href="mailto:ishanchinthaka2002@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-card">
+          <img src="./images/ishan-chinthaka.jpg" alt="Ishan Chinthaka" class="profile-photo">
+          <div class="photo-bio">
+            <h3>W. A. K. Ishan Chinthaka</h3>
+            <p class="muted">Software Developer in Ambalangoda, Sri Lanka</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:ishanchinthaka2002@gmail.com">ishanchinthaka2002@gmail.com</a></li>
+              <li><strong>Phone:</strong> +94-765274750</li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ishan-chinthaka-1a6b5a2b1/" target="_blank" rel="noopener">ishan-chinthaka-1a6b5a2b1</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Country Cafe Website</h3>
-              <p>
-                A visually appealing website for Country Cafe with online ordering and reservation features.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-                <li>PHP</li>
-              </ul>
-
-              <div class="work__links">
-               
-                
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Country Cafe Website" />
+  <main>
+    <section id="work" class="section container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="grid projects">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="./images/project-1.png" alt="Country Cafe" class="card-image">
+          <div class="card-body">
+            <h3>Country Cafe Website</h3>
+            <p>A modern responsive website with online ordering and reservations.</p>
+            <p class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>PHP</span></p>
+            <div class="card-actions">
+              <a class="link" href="https://ish-22.github.io/ishan-chinthaka/" target="_blank" rel="noopener">Live</a>
             </div>
           </div>
+        </article>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>LuxeVista Resort App</h3>
-              <p>
-                A mobile app for LuxeVista Resort with room booking and service reservation features.
-              </p>
-              <ul class="work__list">
-                <li>Java</li>
-                <li>SQLite</li>
-                <li>Figma</li>
-                <li>XML</li>
-              </ul>
-
-              <div class="work__links">
-                
-                
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="LuxeVista Resort App" />
-            </div>
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="./images/project-2.png" alt="LuxeVista" class="card-image">
+          <div class="card-body">
+            <h3>LuxeVista Resort App</h3>
+            <p>Mobile app for room booking and service reservations (Java & SQLite).</p>
+            <p class="tags"><span>Java</span><span>SQLite</span><span>Figma</span></p>
           </div>
+        </article>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>FitZone Fitness Center Website</h3>
-              <p>
-                A website for FitZone Fitness Center with membership registration and booking system.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-                <li>PHP</li>
-              </ul>
-
-              <div class="work__links">
-                
-                
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="FitZone Fitness Website" />
-            </div>
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="./images/project-3.png" alt="FitZone" class="card-image">
+          <div class="card-body">
+            <h3>FitZone Fitness Center</h3>
+            <p>Membership and booking system with admin & user panels.</p>
+            <p class="tags"><span>PHP</span><span>MySQL</span><span>JS</span></p>
           </div>
+        </article>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Pharmacy Inventory Management</h3>
-              <p>
-               A service-oriented application for the State Pharmaceutical Corporation 
-               (SPC) with supplier registration, stock management, and drug ordering system.
-              </p>
-              <ul class="work__list">
-                <li>C#</li>
-                 <li>API</li>
-                  <li>MySQL</li>
-              </ul>
-
-              <div class="work__links">
-               
-              
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-4.png" class="work__image" alt="Pharmacy Inventory" />
-            </div>
+        <!-- Card 4 -->
+        <article class="card">
+          <img src="./images/project-4.png" alt="Pharmacy Inventory" class="card-image">
+          <div class="card-body">
+            <h3>Pharmacy Inventory Management</h3>
+            <p>Service-oriented app for SPC: supplier registration, stock and orders.</p>
+            <p class="tags"><span>C#</span><span>API</span><span>MySQL</span></p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!--  (Modified to Certifications)  -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Certifications</h2>
-        <div class="client__logos">
-          <p>IT for Business Success (HP Life)</p>
-          <p>SQL and Relational Databases 101 (IBM Developer Skills Network)</p>
-          <p>Python for Beginners (University of Moratuwa)</p>
-          <p>User Experience Design - Learn UI UX App Design with Figma (Udemy)</p>
-          <p>Professional Diploma in Software Testing & Quality Assurance (Udemy)</p>
-          <p>Learn HTML, CSS, JS the hard way: with projects (Udemy)</p>
-          <p>Deep Learning Python course (Udemy)</p>
-        </div>
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill-grid">
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">PHP</span>
+        <span class="skill">React / TypeScript</span>
+        <span class="skill">MySQL / SQLite / MongoDB</span>
+        <span class="skill">UI/UX (Figma)</span>
+        <span class="skill">Kotlin / Android</span>
       </div>
     </section>
-<!-- ***** Skills ***** -->
-<section class="skills" id="skills">
-  <div class="row">
-    <h2>Skills</h2>
-    <div class="skill_list">
-      <p>Programming Languages: Java, Python, PHP, JavaScript, C++, SQL</p>
-      <p>Web Technologies: HTML, CSS, Bootstrap</p>
-      <p>Databases: MySQL, SQLite</p>
-      <p>UI/UX Design: Figma</p>
-      <p>Frameworks & Libraries: jQuery</p>
-      <p>Other Tools: XML, Git</p>
-    </div>
-  </div>
-</section>
 
-    <!-- ***** About ***** -->
+    <section id="certs" class="section container">
+      <h2 class="section-title">Certifications & Training</h2>
+      <ul class="cert-list">
+        <li>IT for Business Success (HP Life)</li>
+        <li>SQL & Relational Databases 101 (IBM)</li>
+        <li>Python for Beginners (University of Moratuwa)</li>
+        <li>UI/UX with Figma (Udemy)</li>
+        <li>Software Testing & QA (Udemy)</li>
+      </ul>
+    </section>
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-          <br>I am a highly focused and analytical software developer with a passion for challenges and problem-solving. 
-          I thrive in dynamic environments and am eager to explore new growth opportunities. 
-          Proficient in multiple programming languages and tools, I have hands-on experience in web and mobile app development, UI/UX design, and database management.
-           Currently pursuing a Higher Diploma in 
-          Computing and Software Engineering at Cardiff Metropolitan University via ICBT Campus, Sri Lanka.
-            </p>
-            <a href="./images/Ishan_ChinthakaCV.docx" class="btn">My Resume</a>
-          </div>
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I am a focused, motivated and analytical software developer who loves problem solving and building usable, maintainable systems. I have experience with web & mobile apps, back-end APIs, and UI/UX design. Currently studying for a Higher Diploma in Computing & Software Engineering at Cardiff Metropolitan University (via ICBT Campus).</p>
 
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/ishan-chinthaka.jpg" alt="Ishan Chinthaka" />
-          </div>
+          <h4>Experience Highlights</h4>
+          <ul>
+            <li>Trainee Software Developer — AMAZOFT (June 2025 — Present)</li>
+            <li>Employee Management System (PHP, MySQL)</li>
+            <li>POS System (Laravel, TypeScript, MySQL)</li>
+            <li>School Management System (PHP, HTML/CSS)</li>
+          </ul>
+        </div>
+        <aside class="side-card">
+          <h4>Contact</h4>
+          <p><strong>Email</strong><br><a href="mailto:ishanchinthaka2002@gmail.com">ishanchinthaka2002@gmail.com</a></p>
+          <p><strong>Phone</strong><br>+94-765274750</p>
+          <p><strong>Location</strong><br>Kuruduwaththa, Meetiyagoda</p>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/ishan-chinthaka-1a6b5a2b1/" target="_blank" rel="noopener">LinkedIn profile</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Get in touch</h2>
+      <p>If you have a project, collaboration or role that fits, email me — I usually reply within a few days.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Say Hello</h4>
+          <a class="contact-email" href="mailto:ishanchinthaka2002@gmail.com">ishanchinthaka2002@gmail.com</a>
+          <p class="muted">Or reach out on <a href="https://www.linkedin.com/in/ishan-chinthaka-1a6b5a2b1/" target="_blank" rel="noopener">LinkedIn</a> / <a href="https://github.com/ish-22" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h4>Resume</h4>
+          <a class="btn" href="./images/Ishan Chinthaka_cv.pdf" download="Ishan_Chinthaka_CV.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a skilled software developer to build a user-friendly website or mobile app? Or do you need consultation on a project? Feel free to reach out! I’m happy to answer questions, provide advice, or just say "Hi 👋". The quickest way to contact me is via email.
-        </p>
-        <a href="mailto:ishanchinthaka2002@gmail.com" class="btn">ishanchinthaka2002@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/ishan-chinthaka-1a6b5a2b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          title="Link to LinkedIn Profile">
-            <img src="./images/linkedin.svg" title="Link to LinkedIn Profile" class="footer__social-image" alt="LinkedIn">
-          </a>
-        </li>
-      </ul>
-      <p>
-        © 2025 -  Designed & developed by <a href="" class="link">Ishan Chinthaka</a>.
-      </p>
-      <div class="footer__github-buttons">
-       
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Designed &amp; developed by <strong>Ishan Chinthaka</strong></p>
+      <p class="muted">LinkedIn • GitHub • Email</p>
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
+  <a id="backToTop" class="back-to-top" href="#top" aria-label="Back to top">↑</a>
 
+  <script src="./index.js" defer></script>
+</body>
 </html>
