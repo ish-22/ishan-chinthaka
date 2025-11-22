@@ -104,7 +104,7 @@ body{
 
 .hero-ctas{ display:flex; gap:1rem; margin-bottom:1.2rem; }
 
-.photo-card{
+/* .photo-card{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius:var(--radius);
   padding:1.2rem;
@@ -113,7 +113,7 @@ body{
   align-items:center;
   border:1px solid var(--glass-border);
   box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-}
+} */
 .profile-photo{ width:92px; height:92px; border-radius:12px; object-fit:cover; border:2px solid rgba(255,255,255,0.04); }
 
 /* social row */
