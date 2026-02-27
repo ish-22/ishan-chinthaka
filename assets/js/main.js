@@ -1,12 +1,14 @@
 $(document).ready(function() {
 
     // Typing animation
-    new Typed('.typing', {
-        strings: ["Developer", "Software Engineer", "UI/UX Enthusiast"],
-        typeSpeed: 60,
-        backSpeed: 40,
-        loop: true
-    });
+    if ($('.typing').length) {
+        new Typed('.typing', {
+            strings: ["Developer", "Software Engineer", "UI/UX Enthusiast"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+    }
 
     // Smooth scroll
     $('.nav-menu a').on('click', function(e) {
