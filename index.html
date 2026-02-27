@@ -1,133 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ishan Chinthaka — Software Developer</title>
-    <meta name="description" content="Ishan Chinthaka — Software Developer. Web & mobile apps, PHP, Java, React, UI/UX.">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ishan Chinthaka | Portfolio</title>
 
-    <link rel="stylesheet" href="index.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,700|Poppins:400,600" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="site-header" id="top">
-        <div class="container header-inner">
-            <a class="brand" href="#top">Ishan<span class="accent">.</span></a>
+    <header id="header">
+        <div class="container text-center">
+            <h1><a href="#">Ishan Chinthaka</a></h1>
+            <h2>I'm <span class="typing"></span></h2>
 
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#work">Work</a></li>
+            <nav class="nav-menu mt-4">
+                <ul class="d-flex justify-content-center">
+                    <li class="active"><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <div>
-                <a class="btn btn-primary" href="mailto:ishanchinthaka2002@gmail.com">Email</a>
-            </div>
-        </div>
-
-        <div class="hero container">
-            <div>
-                <h1>Hi — I'm <strong>Ishan Chinthaka</strong></h1>
-                <p>
-                    Software Developer passionate about building scalable web & mobile applications with strong UI/UX and backend architecture.
-                </p>
-                <a class="btn btn-primary" href="#contact">Let's Talk</a>
-            </div>
-
-            <div class="photo-card">
-                <img src="images/ishan-chinthaka.jpg" alt="Ishan Chinthaka" class="profile-photo">
-                <h3>W. A. K. Ishan Chinthaka</h3>
-                <p class="muted">Software Developer | Sri Lanka</p>
+            <div class="social-links mt-4">
+                <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="github"><i class='bx bxl-github'></i></a>
+                <a href="mailto:yourmail@gmail.com" class="google"><i class='bx bx-envelope'></i></a>
             </div>
         </div>
     </header>
 
-    <main>
-
-        <section id="work" class="section container">
-            <h2>Selected Projects</h2>
-            <div class="projects">
-
-                <div class="card">
-                    <h3>Employee Management System</h3>
-                    <p>Admin & Employee leave, salary and attendance management system.</p>
-                    <p><strong>Tech:</strong> PHP, MySQL</p>
-                </div>
-
-                <div class="card">
-                    <h3>POS System</h3>
-                    <p>Point of Sale system with GRN & inventory modules.</p>
-                    <p><strong>Tech:</strong> Laravel, TypeScript, MySQL</p>
-                </div>
-
-                <div class="card">
-                    <h3>Support Ticketing System</h3>
-                    <p>Customer issue tracking and ticket management platform.</p>
-                    <p><strong>Tech:</strong> PHP, HTML, CSS, MySQL</p>
-                </div>
-
-                <div class="card">
-                    <h3>LuxeVista Resort App</h3>
-                    <p>Room booking and service reservation mobile app.</p>
-                    <p><strong>Tech:</strong> Java, SQLite</p>
-                </div>
-
+    <section id="about" class="section-show">
+        <div class="container">
+            <div class="section-title">
+                <h2>About</h2>
+                <p>About Me</p>
             </div>
-        </section>
 
-        <section id="skills" class="section container">
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <span>Java</span>
-                <span>Python</span>
-                <span>C++</span>
-                <span>C#</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>PHP</span>
-                <span>React</span>
-                <span>SpringBoot</span>
-                <span>MySQL</span>
-                <span>MongoDB</span>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/img/profile.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <p>
+                        Passionate Software Developer focused on building scalable web and mobile applications.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="section container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>BSc (Hons) Software Engineering</strong> (2025–Present)</li>
-                <li><strong>Higher Diploma in Computing & Software Engineering</strong> (2023–2025)</li>
-                <li>G.C.E Advanced Level – Mathematics Stream</li>
-            </ul>
-        </section>
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>My Skills</p>
+            </div>
 
-        <section id="about" class="section container">
-            <h2>About Me</h2>
-            <p>
-                Highly motivated and analytical Software Developer with strong problem-solving skills and passion for building scalable systems.
-            </p>
-        </section>
+            <div class="row text-center">
+                <div class="col-md-3">Java</div>
+                <div class="col-md-3">PHP</div>
+                <div class="col-md-3">React</div>
+                <div class="col-md-3">MySQL</div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="section container">
-            <h2>Contact</h2>
-            <p><strong>Email:</strong> ishanchinthaka2002@gmail.com</p>
-            <p><strong>Phone:</strong> +94-765274750</p>
-            <p><strong>Location:</strong> Meetiyagoda, Sri Lanka</p>
-        </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>My Work</p>
+            </div>
 
-    </main>
+            <div class="row">
+                <div class="col-lg-4 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="https://via.placeholder.com/350x250" class="img-fluid">
+                        <div class="portfolio-info">
+                            <h4>Employee Management System</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
-        <p>© 2025 Ishan Chinthaka — Software Developer</p>
-    </footer>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Get In Touch</p>
+            </div>
+
+            <p>Email: yourmail@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
