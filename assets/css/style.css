@@ -93,3 +93,25 @@ section {
     border: 4px solid #12d640;
     padding: 5px;
 }
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(18, 214, 64, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #042e5f;
+    border-color: #12d640;
+}
+
+.card-title {
+    color: #12d640;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.badge {
+    font-size: 14px;
+    font-weight: 500;
+}
