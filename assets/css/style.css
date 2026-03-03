@@ -66,6 +66,23 @@ a:hover {
     font-weight: 600;
 }
 
+/* Typing animation advanced style */
+.typing {
+    font-size: 32px;
+    font-weight: 600;
+    color: #00d4ff;
+    border-right: 2px solid #00d4ff;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00d4ff; }
+}
+
 /* Navigation */
 .nav-menu ul {
     list-style: none;
