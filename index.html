@@ -1,102 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Ishan Chinthaka | Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,700|Poppins:400,600" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Chinthaka - Software Developer Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-
 <body>
-
-    <header id="header">
-        <div class="container text-center">
-            <h1><a href="#">Ishan Chinthaka</a></h1>
-            <h2>I'm <span class="typing"></span></h2>
-
-            <nav class="nav-menu mt-4">
-                <ul class="d-flex justify-content-center">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="social-links mt-4">
-                <a href="https://ish-22.github.io/ishan-chinthaka/" target="_blank" class="linkedin"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://ish-22.github.io/ishan-chinthaka/" target="_blank" class="github"><i class='bx bxl-github'></i></a>
-                <a href="mailto:ishanchinthaka2002@gmail.com" class="google"><i class='bx bx-envelope'></i></a>
-                <a href="./images/IshanChinthaka_Resume.pdf" target="_blank" class="btn btn-sm btn-outline-light mt-2"><i class='bx bx-download'></i> Download CV</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">IC</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About</h2>
-                <p>About Me</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo">
+                <img src="./assets/images/profile.jpg" alt="Ishan Chinthaka">
             </div>
+            <h1 class="hero-title">
+                <span class="typing-text">Ishan Chinthaka</span>
+            </h1>
+            <p class="hero-subtitle">Software Developer</p>
+            <p class="hero-description">
+                Passionate Software Developer specializing in modern web applications and backend systems. 
+                I enjoy building scalable applications, solving real-world problems, and continuously learning new technologies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+                <a href="./resume/ishan-chinthaka-cv.pdf" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="https://github.com/ish-22" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-center">
-                    <img src="assets/img/profile.jpg" class="img-fluid rounded-circle profile-img" alt="Profile Image">
-                </div>
-                <div class="col-lg-8">
-                    <h3>Web Developer</h3>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
                     <p>
-                        I am a highly focused, motivated, and analytical individual with a strong passion for challenges and problem-solving. 
-                        I thrive in dynamic environments and am always eager to explore new growth opportunities.
+                        I'm a passionate software developer with a strong foundation in full-stack development. 
+                        My journey in tech has been driven by a desire to build meaningful applications that solve real-world problems.
                     </p>
                     <p>
-                        <strong>Location:</strong> 320/B, Kuruduwaththa, Meetiyagoda<br>
-                        <strong>Phone:</strong> +94765274750<br>
-                        <strong>Email:</strong> ishanchinthaka2002@gmail.com<br>
-                        <strong>Website:</strong> <a href="https://ish-22.github.io/ishan-chinthaka/" target="_blank">https://ish-22.github.io/ishan-chinthaka/</a>
+                        With experience in both frontend and backend technologies, I specialize in creating scalable, 
+                        efficient systems. I'm particularly interested in web development, backend systems, and mobile applications.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education</h2>
-                <p>My Qualifications</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">BSc (Hons) Software Engineering</h5>
-                            <p class="card-text"><strong>University of Cardiff Metropolitan</strong></p>
-                            <p class="card-text">UK | 2025 - Present</p>
+                    <p>
+                        I believe in continuous learning and staying updated with the latest technologies. 
+                        My problem-solving approach combines technical expertise with creative thinking to deliver high-quality solutions.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-globe"></i>
+                            <h4>Web Development</h4>
+                            <p>Building responsive and interactive web applications</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Higher Diploma in Computing and Software Engineering</h5>
-                            <p class="card-text"><strong>University of Cardiff Metropolitan</strong></p>
-                            <p class="card-text">UK | 2023 - 2025</p>
+                        <div class="highlight">
+                            <i class="fas fa-server"></i>
+                            <h4>Backend Systems</h4>
+                            <p>Designing robust server-side architectures</p>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-database"></i>
+                            <h4>Database Design</h4>
+                            <p>Creating efficient data structures and queries</p>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile Apps</h4>
+                            <p>Developing native Android applications</p>
                         </div>
                     </div>
                 </div>
@@ -104,51 +112,156 @@
         </div>
     </section>
 
-    <section id="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="section-title">
-                <h2>Skills</h2>
-                <p>My Skills</p>
-            </div>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row text-center">
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Java</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Python</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">C/C++</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">JavaScript</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">HTML</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">PHP</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">CSS</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Kotlin</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">C#</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">TypeScript</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">React</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">SQLite</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">MongoDB</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Figma</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Canva</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Node JS</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">MySQL</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Tailwind</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">SpringBoot</span></div>
-                <div class="col-md-2 mb-3"><span class="badge bg-primary p-2">Next JS</span></div>
-            </div>
-        </div>
-    </section>
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
-                <p>My Work</p>
-            </div>
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Kotlin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="col-lg-4 portfolio-item">
-                    <div class="portfolio-wrap">
-                        <img src="https://via.placeholder.com/350x250" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Employee Management System</h4>
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQLite</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,25 +269,307 @@
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-            <div class="section-title">
-                <h2>Contact</h2>
-                <p>Get In Touch</p>
-            </div>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=FitZone" alt="FitZone">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ish-22" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FitZone Fitness Center</h3>
+                        <p>Gym management website with program information, services, membership registration and responsive navigation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ish-22" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <p><strong>Email:</strong> ishanchinthaka2002@gmail.com</p>
-            <p><strong>Phone:</strong> +94765274750</p>
-            <p><strong>Location:</strong> 320/B, Kuruduwaththa, Meetiyagoda</p>
-            <p><strong>Website:</strong> <a href="https://ish-22.github.io/ishan-chinthaka/" target="_blank">https://ish-22.github.io/ishan-chinthaka/</a></p>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=FixNow" alt="FixNow">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ish-22" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FixNow Repair Service</h3>
+                        <p>Online repair request system with user authentication, issue tracking, technician communication and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ish-22" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Pahana+Edu" alt="Pahana Edu">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ish-22" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pahana Edu Bookshop</h3>
+                        <p>Modern web application for managing bookshop operations including billing, inventory management, order processing and customer management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ish-22" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=LuxeVista" alt="LuxeVista">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ish-22" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LuxeVista Resort App</h3>
+                        <p>Android mobile application that allows guests to browse hotel rooms, book accommodations and reserve hotel services.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ish-22" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <!-- Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Trainee Software Developer</h3>
+                        <p class="timeline-company">Amazoft (Pvt) Ltd</p>
+                        <p class="timeline-date">2025 - Present</p>
+                        <ul class="timeline-list">
+                            <li>Contributed to Employee Management System development</li>
+                            <li>Assisted in POS system implementation</li>
+                            <li>Participated in company website redesign</li>
+                            <li>Supported development of School Management System</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>PHP (Laravel)</span>
+                            <span>TypeScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Education 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>BSc (Hons) Software Engineering</h3>
+                        <p class="timeline-company">Cardiff Metropolitan University</p>
+                        <p class="timeline-date">2025 - Present</p>
+                        <p>Pursuing advanced degree in Software Engineering with focus on modern development practices and emerging technologies.</p>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Higher Diploma in Computing and Software Engineering</h3>
+                        <p class="timeline-company">Cardiff Metropolitan University</p>
+                        <p class="timeline-date">2023 - 2025</p>
+                        <p>Completed comprehensive diploma covering full-stack development, database design, and software engineering principles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern web applications using latest technologies and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Designing and implementing robust server-side architectures and APIs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Design</h3>
+                    <p>Creating efficient database structures and optimizing queries for performance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Developing native Android applications with intuitive user interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+94 765274750</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ishanchinthaka2002@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Portfolio</h4>
+                            <p>https://ish-22.github.io/ishan-chinthaka/</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Ishan Chinthaka</h4>
+                    <p>Software Developer | Full-Stack Developer | Problem Solver</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/ish-22" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:ishanchinthaka2002@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ishan Chinthaka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
